@@ -8,4 +8,4 @@ class Product(models.Model):
 
     @property
     def sale_price(self):
-        return self.price * 0.8
+        return float(self.price) * 0.8
